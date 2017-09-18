@@ -8,4 +8,8 @@ public class LevelSlots : MonoBehaviour {
 	public Text txtLevel;
 	public Text txtMsg;
 	public Text txtPontos;
+
+	public void irParaOLevel(){
+		SceneManager.LoadScene ("Level-"+txtLevel.text);
+	}
 }

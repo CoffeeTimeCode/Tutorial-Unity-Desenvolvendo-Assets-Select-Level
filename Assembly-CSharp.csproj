@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ControladorArquivos.cs" />
+     <Compile Include="Assets\Scripts\ControladorJogador.cs" />
      <Compile Include="Assets\Scripts\ControladorMenu.cs" />
      <Compile Include="Assets\Scripts\Jogador.cs" />
      <Compile Include="Assets\Scripts\Level.cs" />
