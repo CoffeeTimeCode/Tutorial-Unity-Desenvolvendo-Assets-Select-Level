@@ -23,7 +23,7 @@ public class ControladorLevel : MonoBehaviour {
 		_pontos += pontos;
 		for (int i = 0; i < _ctlJogador._jogador.levels.Count; i++) {
 			if(_ctlJogador._jogador.levels[i].level==(_nextLevel.level-1)){
-				_ctlJogador._jogador.levels [i].pontos = _pontos;
+				_ctlJogador._jogador.levels [i].pontos += pontos;
 				if(_ctlJogador._jogador.levels[i].pontos>=_nextLevel.pontos&&_ctlJogador._jogador.levels.Count==(_nextLevel.level-1)){
 					_ctlJogador._jogador.levels.Add (new Level(_nextLevel.level,0));
 				}
@@ -33,6 +33,7 @@ public class ControladorLevel : MonoBehaviour {
 
 	public void votlarMenu(){
 		Destroy (_ctlJogador.gameObject);
+		this._ctlJogador.salvar ();
 		SceneManager.LoadScene ("Menu");
 	}
 }

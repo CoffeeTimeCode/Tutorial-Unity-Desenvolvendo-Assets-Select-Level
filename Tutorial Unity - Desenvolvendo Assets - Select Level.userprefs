@@ -2,7 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ControladorLevel.cs">
     <Files>
-      <File FileName="Assets\Scripts\ControladorLevel.cs" Line="12" Column="32" />
+      <File FileName="Assets\ControladorArquivos.cs" Line="30" Column="48" />
+      <File FileName="Assets\Scripts\ControladorJogador.cs" Line="7" Column="41" />
+      <File FileName="Assets\Scripts\ControladorLevel.cs" Line="22" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

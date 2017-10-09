@@ -26,8 +26,8 @@ public class ControladorArquivos {
 		}
 	}
 
-	public void criarArquivo(string nome, string conteudo){
-		if (this.validarArquivo (nome)) {
+	public void criarArquivo(string nome, string conteudo, bool sobrescrever=false){
+		if (this.validarArquivo (nome)&&!sobrescrever) {
 			Debug.Log("Esse arquivo ja existe");
 		} else {
 			var arquivo = File.CreateText(this._caminho+"/"+nome);
