@@ -36,6 +36,19 @@ public class ControladorArquivos {
 		}
 	}
 
+	public string[] listarArquivos(string nome, string extesao){
+		if(this.validarDiretorio (nome)){
+			string[] arquivos = Directory.GetFiles(this._caminho+"/"+nome,extesao);
+			for (int i = 0; i < arquivos.Length; i++) {
+				arquivos [i] = arquivos [i].Replace (this._caminho+"/"+nome+"\\","");
+			}
+			return arquivos;
+		}else{
+			Debug.Log("Esse arquivo não existe");
+		}
+		return null;
+	}
+
 	public string lerArquivo(string nome){
 		if (this.validarArquivo (nome)) {
 			var arquivo = File.OpenText(this._caminho+"/"+nome);

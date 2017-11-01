@@ -33,6 +33,7 @@ public class ControladorLevel : MonoBehaviour {
 
 	public void votlarMenu(){
 		Destroy (_ctlJogador.gameObject);
+		Destroy (GameObject.Find("ControladorLinguagens"));
 		this._ctlJogador.salvar ();
 		SceneManager.LoadScene ("Menu");
 	}
